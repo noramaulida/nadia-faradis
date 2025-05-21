@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Saya</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #f8d7f1, #f2b0d1);
+      color: #fff;
+      padding: 50px 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 25px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+      color: #333;
+      transform: translateY(0);
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .container:hover {
+      transform: translateY(-10px);
+    }
+
+    .profile {
+      text-align: center;
+      margin-bottom: 40px;
+      position: relative;
+    }
+
+    .profile img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      border: 4px solid #f2b0d1;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease;
+    }
+
+    .profile img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    .profile h1 {
+      font-size: 34px;
+      color: #333;
+      font-weight: 600;
+      margin-bottom: 10px;
+      text-transform: capitalize;
+      transition: color 0.3s ease;
+    }
+
+    .profile h1:hover {
+      color: #f2b0d1;
+    }
+
+    .profile p {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+
+    .section {
+      margin-top: 40px;
+    }
+
+    .section h2 {
+      font-size: 26px;
+      color: #333;
+      margin-bottom: 20px;
+      border-bottom: 3px solid #f2b0d1;
+      display: inline-block;
+      padding-bottom: 10px;
+    }
+
+    .info p {
+      font-size: 16px;
+      color: #555;
+      line-height: 1.8;
+      margin-bottom: 10px;
+    }
+
+    .contact a {
+      color: #f2b0d1;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    .contact a:hover {
+      color: #ff80ab;
+      text-decoration: underline;
+    }
+
+    .social {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .social a {
+      margin: 0 15px;
+      font-size: 28px;
+      color: #333;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .social a:hover {
+      color: #f2b0d1;
+      transform: scale(1.2);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      font-size: 14px;
+      color: #aaa;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 30px;
+      }
+
+      .profile h1 {
+        font-size: 28px;
+      }
+
+      .section h2 {
+        font-size: 22px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .container {
+        padding: 20px;
+      }
+
+      .profile img {
+        width: 160px;
+        height: 160px;
+      }
+
+      .profile h1 {
+        font-size: 24px;
+      }
+
+      .social a {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="profile">
+      <img src="si dih.jpeg" alt="Foto Profil">
+      <h1>Nama Lengkap Anda</h1>
+      <p>Pelajar | Content Creator | Web Developer</p>
+    </div>
+
+    <div class="section">
+      <h2>Data Pribadi</h2>
+      <div class="info">
+        <p><strong>Nama:</strong> Nadia faradis</p>
+        <p><strong>Tempat, Tanggal Lahir:</strong> sigli, 16 november 2005</p>
+        <p><strong>Alamat:</strong> Jl.caleu kota bakti, busu kumbang</p>
+        <p><strong>Sekolah Asal:</strong> SMPN 2 peukan baro</p>
+        <p><strong>Sekolah Sekarang:</strong> SMAN 1 peukanbaro</p>
+        <p><strong>Hobi:</strong> Desain, Coding, Musik</p>
+      </div>
+    </div>
+
+    <div class="section contact">
+      <h2>Kontak</h2>
+      <p>Email: <a href="nadiafaradis488@gmail.com">nadiafaradis488</a></p>
+      <p>WhatsApp: 0812-3456-7890</p>
+      <p>Lokasi: aceh, Indonesia</p>
+    </div>
+
+    <div class="social">
+      <a href="https://www.instagram.com/ndyafaradis__?igsh=MW1sdXozOGFtNHdmOQ==" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://facebook.com/nama_anda" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="tiktok.com/@naanad_16" target="_blank"><i class="fab fa-tiktok"></i></a>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Nama Anda. Dibuat dengan ❤️</p>
+    </footer>
+  </div>
+</body>
+</html>
